@@ -3,5 +3,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="EmployeeAttandanceManagementSystem/src/main/java"/>
 	<classpathentry kind="lib" path="EmployeeAttandanceManagementSystem/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="F:/Tomcat/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="F:/Tomcat/lib/tomcat-api.jar"/>
 	<classpathentry kind="output" path="EmployeeAttandanceManagementSystem/bin"/>
 </classpath>

@@ -1,11 +1,11 @@
 package com.eams.bo;
 
 public class LoginBO {
-     private String username;
-     private String password;
-     private String repassword;
-    
-     
+
+	
+	private String username;
+	private String password;
+	//private String userType;
 	public String getUsername() {
 		return username;
 	}
@@ -15,19 +15,16 @@ public class LoginBO {
 	public String getPassword() {
 		return password;
 	}
-	public String getRepassword() {
-		return repassword;
-	}
-	public void setRepassword(String repassword) {
-		this.repassword = repassword;
-	}
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	@Override
-	public String toString() {
-		return "LoginBO [username=" + username + ", password=" + password + ", repassword=" + repassword + "]";
+	/*public String getUserType() {
+		return userType;
 	}
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}*/
+
 	
-     
+	
 }

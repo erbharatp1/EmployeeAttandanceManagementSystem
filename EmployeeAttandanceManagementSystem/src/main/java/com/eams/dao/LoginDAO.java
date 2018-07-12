@@ -1,13 +1,9 @@
-/**
- * 
- */
 package com.eams.dao;
 
-/**
- * @author ErBharatp
- *
- */
+import com.eams.bo.LoginBO;
+
 public interface LoginDAO {
-	public String matchingUserPass(String username,String password,String repassword);
+	
+	public int insert(LoginBO bo) throws Exception;
 
 }
