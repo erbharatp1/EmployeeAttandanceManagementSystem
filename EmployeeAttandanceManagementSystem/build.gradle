@@ -21,6 +21,6 @@ dependencies {
  // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
 compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
     
-  compile files('C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar')
+  compile files('D:\\STUDY MATERRIAL\\EmployeeAttendenceManagementSystem\\project\\EmployeeAttandanceManagementSystem\\ojdbc6.jar')
 }
 

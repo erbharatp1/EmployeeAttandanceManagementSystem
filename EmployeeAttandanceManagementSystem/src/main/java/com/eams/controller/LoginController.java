@@ -13,7 +13,7 @@ import com.eams.service.LoginService;
 import com.eams.service.LoginServiceImp;
 import com.eams.vo.LoginVO;
 
-public class LoginForgetController extends HttpServlet {
+public class LoginController extends HttpServlet {
 
 	/**
 	 * 
@@ -24,7 +24,7 @@ public class LoginForgetController extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
 		LoginVO vo = null;
-		String user = null, password = null, userType = null;
+		String user = null, password = null, repassword = null;
 		LoginDTO dto = null;
 		LoginService service = null;
 		String result = null;
@@ -32,8 +32,7 @@ public class LoginForgetController extends HttpServlet {
 
 		// read form data
 		user = req.getParameter("user");
-		password = req.getParameter("pass");
-		userType = req.getParameter("utype");
+		password = req.getParameter("password");
 		// create VO class object having form data
 		vo = new LoginVO();
 		vo.setUsername(user);
@@ -54,7 +53,7 @@ public class LoginForgetController extends HttpServlet {
 		res.setContentType("text/html");
 		pw.println("<h1> Result " + result + "</h1>");
 		// add hyperlinks to go home page
-		pw.println("<a href = 'forgetPassword.html'>Home</a>");
+		pw.println("<a href = 'login.html'>Login</a>");
 		// close stream
 		pw.close();
 	}// end doGet(-,-)
