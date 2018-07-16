@@ -62,6 +62,6 @@ public class RegistrationVO {
 		return "RegistrationBO [fName=" + fName + ", lName=" + lName + ", dob=" + dob + ", gender=" + gender
 				+ ", mobile=" + mobile + "]";
 	}
-]
+
 
 }

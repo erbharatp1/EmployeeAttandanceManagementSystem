@@ -48,10 +48,10 @@ public  void doGet(HttpServletRequest req, HttpServletResponse res) throws Servl
      //general settings
  vo = new RegistrationVO();
  
-vo.setfName(fname);
+/*vo.setfName(fname);
 vo.setlName(lname);vo.setGender(gender);vo.setDob(dob);
     
-     
+   */  
 }@Override
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 	}

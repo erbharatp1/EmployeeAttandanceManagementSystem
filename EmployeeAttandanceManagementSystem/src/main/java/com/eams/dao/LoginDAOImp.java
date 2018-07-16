@@ -10,7 +10,7 @@ import com.eams.bo.LoginBO;
 
 public class LoginDAOImp implements LoginDAO{
 
-	private static final String  forget_Password="UPDATE LOGIN SET PASSWORD=? WHERE USERNAME=?";
+	private static final String  forget_Password="UPDATE LOGIN SET PWD=? WHERE UNAME=?";
 	@Override
 	public int insert(LoginBO bo) throws Exception {
 		Connection con =null;
@@ -23,7 +23,7 @@ public class LoginDAOImp implements LoginDAO{
 			// create InitialContext object
 			ic = new InitialContext();
 			// get DataSource object through lookUp operation
-			ds = (DataSource) ic.lookup("java:/comp/env/mypool");
+			ds = (DataSource) ic.lookup("java:/comp/env/DsJndi");
 			// get connection from JDBC con pool
 			con=ds.getConnection();
 			// create PreparedStatemet Object
