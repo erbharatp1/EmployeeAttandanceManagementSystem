@@ -3,6 +3,8 @@
  */
 package com.eams.service;
 
+import java.sql.Date;
+
 import com.eams.bo.RegistrationBO;
 import com.eams.dao.RegistrationDAO;
 import com.eams.dao.RegistrationDAOImpl;
@@ -15,18 +17,25 @@ import com.eams.dto.RegistrationDTO;
 public class RegistrationServiceImpl implements RegistrationService {
 
 	@Override
-	public String generate(RegistrationDTO dto) {
+	public String generate(RegistrationDTO dto)throws Exception {
 		RegistrationBO bo = null;
 		RegistrationDAO dao = null;
 		// prepare bo object to persistence data
 		bo = new RegistrationBO();
+		
 		bo.setfName(dto.getfName());
-		bo.setfName(dto.getlName());
+		bo.setlName(dto.getlName());
 		bo.setDob(dto.getDob());
-		bo.setGender(dto.getGender());
 		bo.setMobile(dto.getMobile());
-	
-		// use dao
+		bo.setGender(dto.getGender());
+		bo.setEmail(dto.getEmail());
+		bo.setStreet(dto.getStreet());
+		bo.setCity(dto.getCity());
+		bo.setCountry(dto.getCountry());
+		bo.setPin(dto.getPin());
+		// use daoREG_ID FIRSTNAME  LASTNAME DOB MOBILE GENDER
+		//EMAIL     STREET    CITY
+		//STATE   COUNTRY    PIN
 		dao = new RegistrationDAOImpl();
 		int count = dao.insert(bo);
 		if (count == 0)

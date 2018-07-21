@@ -10,5 +10,5 @@ import com.eams.dto.RegistrationDTO;
  *
  */
 public interface RegistrationService {
-     public String generate(RegistrationDTO dto) ;
+     public String generate(RegistrationDTO dto)throws  Exception ;
 }

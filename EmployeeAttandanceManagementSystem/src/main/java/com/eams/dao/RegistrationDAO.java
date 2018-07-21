@@ -10,5 +10,5 @@ import com.eams.bo.RegistrationBO;
  *
  */
 public interface RegistrationDAO {
-    public int insert(RegistrationBO bo);
+    public int insert(RegistrationBO bo) throws Exception;
 }
