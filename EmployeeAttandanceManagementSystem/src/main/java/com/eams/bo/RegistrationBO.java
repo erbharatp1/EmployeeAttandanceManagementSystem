@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.eams.bo;
 
 import java.util.Date;
